@@ -1,0 +1,36 @@
+task:
+  name: "Generate_Detailed_User_Story"
+  description: |
+                Acts as a Lead Systems Analyst. You will take a single Story ID and Title from the 'Story Map' and the full context of the BRD to generate an exhaustive, developer-ready User Story.
+                
+                Constraint: Every detail must be grounded in the BRD. If the BRD specifies a 500ms latency or a specific encryption standard, it MUST appear in the Acceptance Criteria.
+                
+                input:
+                  1. target_story: {target_story}
+                  2. brd_content: {brd_content}
+              
+                steps:
+                  1. Context Retrieval: Cross-reference the `target_story` with the `brd_content` to find all related technical and business constraints.
+                  2. Persona Assignment: Identify the specific actor for this story.
+                  3. Story Synthesis: Write the "As a... I want... So that..." narrative.
+                  4. Detailed Acceptance Criteria: Generate 5-8 granular ACs. Include edge cases, error handling, and non-functional requirements (security/performance) found in the BRD.
+                  5. Technical Dependencies: List any other stories or systems this feature relies upon.
+
+  expected_output: |
+                      ```json
+                      {
+                        "story_details": {
+                          "story_id": "String",
+                          "epic": "String",
+                          "persona": "String",
+                          "user_story": "String",
+                          "acceptance_criteria": [
+                            "Granular Pass/Fail Condition (Logic)",
+                            "Granular Pass/Fail Condition (Validation)",
+                            "Granular Pass/Fail Condition (Edge Case/Error)"
+                          ],
+                          "technical_constraints": ["String"],
+                          "goal_traceability": "Direct quote or reference from BRD justifying the details"
+                        }
+                      }
+                      ```

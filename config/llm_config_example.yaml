@@ -1,0 +1,34 @@
+llm:
+  creative:
+    default: gemini
+    models:
+      gemini:
+        model: "gemini/gemini-2.0-flash"
+        api_key: "API key"
+      gpt:
+        base_url: "http://localhost:1234/v1"
+        model: "lm_studio/openai/gpt-oss-20b"
+        api_key: "lm_studio"
+
+
+  evaluation:
+    default: gemini
+    models:
+      gemini:
+        model: "gemini/gemini-2.0-flash"
+        api_key: "API key"
+      gpt:
+        base_url: "http://localhost:1234/v1"
+        model: "lm_studio/openai/gpt-oss-20b"
+        api_key: "lm_studio"
+
+
+
+llm_parameters:
+  creative:
+    temperature: 0.8
+    top_p: 0.9
+  evaluation:
+    temperature: 0.0
+    top_p: 0.5
+

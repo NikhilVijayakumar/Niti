@@ -1,0 +1,28 @@
+task:
+  name: "Generate_Story_Map"
+  description: |
+                Acts as a Senior Product Owner. Your objective is to scan the BRD and generate a high-level 'Story Map' or 'Index'. 
+                
+                Constraint: Focus on breadth, not depth. Identify all necessary stories to satisfy the BRD without providing details yet.
+            
+                input:
+                  1. brd_content: {brd_content}
+              
+                steps:
+                  1. Identify all Epics and Feature Sets within the BRD.
+                  2. For each feature, generate a Story ID and a "Value Proposition" Title.
+                  3. Map each story to a specific high-level goal in the BRD.
+
+  expected_output: |
+                    ```json
+                    {
+                      "story_map": [
+                        {
+                          "story_id": "US-001",
+                          "epic": "Authentication",
+                          "title": "Biometric Integration for Tier-3 Users",
+                          "brd_reference": "Section 4.2: Security Compliance"
+                        }
+                      ]
+                    }
+                    ```

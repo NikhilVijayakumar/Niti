@@ -1,0 +1,21 @@
+crew_name: "Generate Story Crew"
+usecase: "Generate Story"
+module_name: "generate_story"
+
+crews:
+  generate_story_crew:
+
+    input:
+      - key_name: "scientific_kb"
+        source: "file"
+        path: "data/knowledge/example/project_brd.md"
+        format: "text"
+       
+    steps:
+      - task_file: "data/crew/bala/katha/Idea/tasks/science_kb_to_fantasy_concept_task.yaml"
+        agent_file: "data/crew/bala/katha/Idea/agents/science_bard_agent.yaml"
+
+pipeline:
+  - "generate_story_crew"
+
+

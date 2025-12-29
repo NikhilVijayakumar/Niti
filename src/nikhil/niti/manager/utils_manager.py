@@ -1,0 +1,2 @@
+class UtilsManager:
+    pass

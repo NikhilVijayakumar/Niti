@@ -1,0 +1,15 @@
+[project]
+name = "Niti"
+version = "1.0.0"
+description = "Niti is is an autonomous PMO engine. It utilizes a multi-agent orchestration layer via **CrewAI** to transform raw business requirements into a verified, estimated, and fully automated **Trello** workspace."
+ dependencies = [
+      "Amsha @ git+https://github.com/NikhilVijayakumar/Amsha.git@master",
+     "Pravaha @ git+https://github.com/NikhilVijayakumar/Pravaha.git@main"
+]
+
+[tool.setuptools]
+package-dir = { "" = "src/nikhil" }
+
+[tool.setuptools.packages.find]
+where = ["src/nikhil"]
+
