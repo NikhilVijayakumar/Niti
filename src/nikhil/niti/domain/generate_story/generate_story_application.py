@@ -2,7 +2,9 @@ from typing import Dict, Any
 
 from amsha.crew_forge import AmshaCrewFileApplication
 from amsha.llm_factory.domain.model.llm_type import LLMType
-from niti.domain.generate_story.model.story_map import StoryMap
+
+from src.nikhil.niti.config.settings import Settings
+from src.nikhil.niti.domain.generate_story.model.story_map import StoryMap
 
 
 class GenerateStoryApplication(AmshaCrewFileApplication):
@@ -42,5 +44,18 @@ class GenerateStoryApplication(AmshaCrewFileApplication):
                 results_for_list.append(result)
             pipeline_results[crew_name] = results_for_list
         return pipeline_results
+
+
+if __name__ == "__main__":
+    # Configuration is now neatly defined in one place.
+    configs = {
+        "llm": Settings.LLM_CONFIG,
+        "app": Settings.APP_CONFIG,
+        "job": "src/nikhil/niti/domain/generate_story/config/generate_story_config.yaml"
+    }
+
+    # The main script is now incredibly simple and clean.
+    app = GenerateStoryApplication(config_paths=configs,llm_type=LLMType.CREATIVE)
+    app.run()
 
 
