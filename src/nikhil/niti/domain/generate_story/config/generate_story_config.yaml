@@ -6,14 +6,14 @@ crews:
   generate_story_crew:
 
     input:
-      - key_name: "scientific_kb"
+      - key_name: "brd_content"
         source: "file"
         path: "data/knowledge/example/project_brd.md"
         format: "text"
        
     steps:
-      - task_file: "data/crew/bala/katha/Idea/tasks/science_kb_to_fantasy_concept_task.yaml"
-        agent_file: "data/crew/bala/katha/Idea/agents/science_bard_agent.yaml"
+      - task_file: "data/crew/Generate Story/tasks/generate_story_map_task.yaml"
+        agent_file: "data/crew/Generate Story/agents/backlog_cartographer_agent.yaml"
 
 pipeline:
   - "generate_story_crew"

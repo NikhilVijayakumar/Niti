@@ -91,3 +91,11 @@ NITI classifies tasks into "AI-Optimization Zones" to ensure estimates remain re
 * **Definition of Done (DoD):** Every card includes a mandatory audit step to verify AI-generated code against the Architect's design.
 
 ---
+
+## ## 7. Running the Application
+
+To run the application, ensure you are in the project root and have the virtual environment activated.
+
+```bash
+export PYTHONPATH=$PYTHONPATH:$(pwd)/src/nikhil && uvicorn niti.app.main:app --reload
+```

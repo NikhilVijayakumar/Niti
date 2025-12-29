@@ -1,8 +1,8 @@
-
 from typing import Dict, Any
 
 from amsha.crew_forge import AmshaCrewFileApplication
 from amsha.llm_factory.domain.model.llm_type import LLMType
+from niti.domain.generate_story.model.story_map import StoryMap
 
 
 class GenerateStoryApplication(AmshaCrewFileApplication):
@@ -26,12 +26,12 @@ class GenerateStoryApplication(AmshaCrewFileApplication):
         for crew_name in pipeline_steps:
             if not pipeline_results:
                 next_input = self._prepare_multiple_inputs_for(crew_name)
-                pipeline_input["scientific_kb"] = next_input["scientific_kb"]
+                pipeline_input["brd_content"] = next_input["brd_content"]
                 print(f"{class_name} - pipeline_input:{pipeline_input}")
                 result = self.orchestrator.run_crew(
                     crew_name=crew_name,
                     inputs=pipeline_input,
-                    output_json=FantasyBlueprint
+                    output_json=StoryMap
                 )
                 output_file = self.orchestrator.get_last_output_file()
                 if output_file:
