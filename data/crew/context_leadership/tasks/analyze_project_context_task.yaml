@@ -1,0 +1,28 @@
+task:
+  name: "Analyze_Project_Context"
+  description: |
+    INTERNAL CONTEXT TASK.
+    You MUST output a single JSON object.
+    This output is INTERNAL and NOT the final crew artifact.
+
+    RULES:
+    - Output JSON only
+    - No markdown
+    - No explanations
+
+    input:
+      1. brd_content: {brd_content}
+
+    steps:
+      1. Extract domain signals
+      2. Identify constraints
+      3. Capture assumptions
+
+  expected_output: |
+    {
+      "context_notes": {
+        "domain": "String",
+        "constraints": ["String"],
+        "assumptions": ["String"]
+      }
+    }

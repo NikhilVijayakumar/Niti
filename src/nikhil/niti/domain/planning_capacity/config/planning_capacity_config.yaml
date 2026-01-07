@@ -1,0 +1,24 @@
+crew_name: "Planning & Capacity Crew"
+usecase: "Sprint Planning, Capacity Validation, and Review Export"
+module_name: "planning_capacity"
+
+crews:
+  planning_capacity_crew:
+
+    input:
+      - key_name: "consensus_report"
+        source: "file"
+        path: "/home/user/Arsha/Niti/D:/Crew/bala-katha/.Amsha/output/final/output/estimation_architecture/gemini-2.5-flash.json"
+        format: "json"
+
+    steps:
+      # Step 1: Generate sprint plan using capacity intelligence
+      - task_file: "data/crew/planning_capacity/tasks/generate_sprint_plan_task.yaml"
+        agent_file: "data/crew/planning_capacity/agents/project_manager_agent.yaml"
+
+      # Step 2: Export Excel review sheet (human checkpoint)
+      - task_file: "data/crew/planning_capacity/tasks/export_review_sheet_task.yaml"
+        agent_file: "data/crew/planning_capacity/agents/project_manager_agent.yaml"
+
+pipeline:
+  - "planning_capacity_crew"

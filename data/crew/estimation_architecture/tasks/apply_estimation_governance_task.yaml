@@ -1,0 +1,31 @@
+task:
+  name: "Apply_Estimation_Governance"
+  description: |
+                Acts as a Delivery Gatekeeper. You will convert base estimates into junior-safe execution estimates.
+                
+                input:
+                  1. architecture_blueprint: (Provided by previous task context)
+                  2. team_profile: {team_profile}
+
+                steps:
+                  1. Skill Matching: Match stories against team strengths and gaps.
+                  2. TCF Application: Adjust hours based on experience.
+                  3. AEF Application: Apply AI efficiency discounts.
+                  4. Atomic Enforcement: Split tasks exceeding 8 hours.
+                  5. Risk Annotation: Flag high-risk tasks.
+
+  expected_output: |
+                    ```json
+                    {
+                      "consensus_report": [
+                        {
+                          "story_id": "String",
+                          "final_estimate_hours": "Number",
+                          "tcf": "Number",
+                          "aef": "Number",
+                          "risk_level": "Low | Medium | High",
+                          "justification": "String"
+                        }
+                      ]
+                    }
+                    ```

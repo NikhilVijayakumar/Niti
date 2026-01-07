@@ -1,0 +1,81 @@
+{
+    "sprint_metadata": {
+        "sprint_name": "Sprint 2024-07-01",
+        "start_date": "2024-07-01",
+        "end_date": "2024-07-12",
+        "duration_weeks": 2
+    },
+    "sprint_goal": "Deliver user authentication improvements and initial dashboard analytics.",
+    "allocations": [
+        {
+            "story_id": "FEAT-001",
+            "assignee": "Alice",
+            "estimated_hours": 15.0
+        },
+        {
+            "story_id": "FEAT-003",
+            "assignee": "Alice",
+            "estimated_hours": 10.0
+        },
+        {
+            "story_id": "FEAT-005",
+            "assignee": "Alice",
+            "estimated_hours": 18.0
+        },
+        {
+            "story_id": "BUG-001",
+            "assignee": "Alice",
+            "estimated_hours": 5.0
+        },
+        {
+            "story_id": "FEAT-002",
+            "assignee": "Bob",
+            "estimated_hours": 12.0
+        },
+        {
+            "story_id": "FEAT-004",
+            "assignee": "Bob",
+            "estimated_hours": 20.0
+        },
+        {
+            "story_id": "FEAT-007",
+            "assignee": "Bob",
+            "estimated_hours": 15.0
+        },
+        {
+            "story_id": "FEAT-006",
+            "assignee": "Charlie",
+            "estimated_hours": 25.0
+        },
+        {
+            "story_id": "FEAT-008",
+            "assignee": "Charlie",
+            "estimated_hours": 15.0
+        },
+        {
+            "story_id": "FEAT-009",
+            "assignee": "Charlie",
+            "estimated_hours": 20.0
+        }
+    ],
+    "capacity_summary": [
+        {
+            "developer": "Alice",
+            "available_hours": 65.0,
+            "allocated_hours": 48.0,
+            "utilization_percentage": 73.85
+        },
+        {
+            "developer": "Bob",
+            "available_hours": 65.0,
+            "allocated_hours": 47.0,
+            "utilization_percentage": 72.31
+        },
+        {
+            "developer": "Charlie",
+            "available_hours": 65.0,
+            "allocated_hours": 60.0,
+            "utilization_percentage": 92.31
+        }
+    ]
+}

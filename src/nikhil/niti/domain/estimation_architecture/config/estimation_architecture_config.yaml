@@ -1,0 +1,31 @@
+crew_name: "Estimation & Architecture Crew"
+usecase: "System Architecture Design and Estimation Governance"
+module_name: "estimation_architecture"
+
+crews:
+  estimation_architecture_crew:
+
+    input:
+      # Output from CREW-01
+      - key_name: "product_backlog"
+        source: "file"
+        path: "/home/user/Arsha/Niti/D:/Crew/bala-katha/.Amsha/output/final/output/context_leadership/gemini-2.5-flash.json"
+        format: "json"
+
+      # Team profile (markdown)
+      - key_name: "team_profile"
+        source: "file"
+        path: "data/knowledge/example/team_profile.md"
+        format: "text"
+
+    steps:
+      # Step 1: Technical Architect
+      - task_file: "data/crew/estimation_architecture/tasks/design_system_architecture_task.yaml"
+        agent_file: "data/crew/estimation_architecture/agents/technical_architect_agent.yaml"
+
+      # Step 2: Technical Lead
+      - task_file: "data/crew/estimation_architecture/tasks/apply_estimation_governance_task.yaml"
+        agent_file: "data/crew/estimation_architecture/agents/technical_lead_agent.yaml"
+
+pipeline:
+  - "estimation_architecture_crew"

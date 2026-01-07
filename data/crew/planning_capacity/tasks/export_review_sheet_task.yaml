@@ -1,0 +1,7 @@
+task:
+  name: "Export_Review_Sheet"
+  description: |
+                Converts the sprint plan into a human-reviewable Excel artifact.
+
+  expected_output: |
+                    "review_sheet.xlsx"

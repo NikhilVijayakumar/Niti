@@ -19,4 +19,4 @@ app = create_fastapi_app(
 )
 
 # You would then run this file using uvicorn:
-# uvicorn src.bavans.akashvani.application.app.api:app --reload
+#  uvicorn src.nikhil.niti.app.main:app --reload

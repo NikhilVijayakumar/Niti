@@ -1,0 +1,25 @@
+task:
+  name: "Generate_Sprint_Plan"
+  description: |
+                Acts as a Delivery Strategist. You will select sprint-safe work based on capacity intelligence.
+                
+                input:
+                  1. consensus_report: {consensus_report}
+                  2. sprint_duration: {sprint_duration}
+
+                steps:
+                  1. Capacity Calculation: Compute net available hours.
+                  2. Bin Packing: Fit tasks without exceeding limits.
+                  3. Sprint Goal Formation: Define a cohesive sprint objective.
+                  4. Validation: Ensure no developer is over-allocated.
+
+  expected_output: |
+                    ```json
+                    {
+                      "sprint_plan": {
+                        "sprint_goal": "String",
+                        "selected_stories": ["Story ID"],
+                        "capacity_summary": "String"
+                      }
+                    }
+                    ```

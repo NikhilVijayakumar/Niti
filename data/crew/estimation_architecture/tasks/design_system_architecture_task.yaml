@@ -1,0 +1,29 @@
+task:
+  name: "Design_System_Architecture"
+  description: |
+                Acts as a Principal Architect. You will analyze the Product Backlog and produce a system-level architectural blueprint.
+                
+                input:
+                  1. product_backlog: {product_backlog}
+
+                steps:
+                  1. Component Identification: Identify major system modules.
+                  2. Dependency Mapping: Identify cross-story and cross-system dependencies.
+                  3. AI Suitability Scoring: Classify tasks by AI leverage potential.
+                  4. Base Estimation: Assign senior-level base hours.
+                  5. Architecture Output: Produce a blueprint artifact.
+
+  expected_output: |
+                    ```json
+                    {
+                      "architecture_blueprint": [
+                        {
+                          "story_id": "String",
+                          "system_component": "String",
+                          "dependencies": ["Story ID"],
+                          "ai_suitability": "High | Medium | Low",
+                          "base_estimate_hours": "Number"
+                        }
+                      ]
+                    }
+                    ```

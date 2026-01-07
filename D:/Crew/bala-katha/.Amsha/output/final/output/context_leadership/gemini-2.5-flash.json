@@ -1,0 +1,123 @@
+{
+    "product_backlog": [
+        {
+            "story_id": "P001",
+            "epic": "Patient Registration & Authentication",
+            "title": "As a new patient, I can securely register an account using my phone number and OTP, so I can access the portal.",
+            "business_value": "High",
+            "brd_reference": "3.1 Patient Registration"
+        },
+        {
+            "story_id": "P002",
+            "epic": "Patient Registration & Authentication",
+            "title": "As a registered patient, I can log in to my VaidyaLink portal account, so I can manage my health information.",
+            "business_value": "High",
+            "brd_reference": "2. Core Objective"
+        },
+        {
+            "story_id": "P003",
+            "epic": "Patient Health Records Management",
+            "title": "As a patient, I can view a list of my uploaded lab reports, so I can keep track of my medical history.",
+            "business_value": "High",
+            "brd_reference": "3.2 Patient Health Records"
+        },
+        {
+            "story_id": "P004",
+            "epic": "Patient Health Records Management",
+            "title": "As a patient, I can open and view my lab reports in PDF format, so I can review the details.",
+            "business_value": "High",
+            "brd_reference": "3.2 Patient Health Records"
+        },
+        {
+            "story_id": "P005",
+            "epic": "Patient-Doctor Messaging",
+            "title": "As a patient, I can send an encrypted text message to my assigned doctor, so I can communicate about my health.",
+            "business_value": "High",
+            "brd_reference": "3.3 Patient Messaging"
+        },
+        {
+            "story_id": "P006",
+            "epic": "Patient-Doctor Messaging",
+            "title": "As a patient, I can view my historical message conversations with my assigned doctor, so I can recall past discussions.",
+            "business_value": "High",
+            "brd_reference": "3.3 Patient Messaging"
+        },
+        {
+            "story_id": "P007",
+            "epic": "Patient-Doctor Messaging",
+            "title": "As a patient, I can receive encrypted text messages from my assigned doctor, so I stay informed.",
+            "business_value": "High",
+            "brd_reference": "3.3 Patient Messaging"
+        },
+        {
+            "story_id": "D001",
+            "epic": "Doctor Dashboard & Patient Management",
+            "title": "As a doctor, I can log in to my VaidyaLink portal account, so I can manage my patients and their records.",
+            "business_value": "High",
+            "brd_reference": "2. Core Objective"
+        },
+        {
+            "story_id": "D002",
+            "epic": "Doctor Dashboard & Patient Management",
+            "title": "As a doctor, I can view a dashboard displaying a list of my assigned patients, so I can quickly access their information.",
+            "business_value": "High",
+            "brd_reference": "3.4 Doctor Dashboard"
+        },
+        {
+            "story_id": "D003",
+            "epic": "Doctor Dashboard & Patient Management",
+            "title": "As a doctor, I can view incoming messages from my patients on the dashboard, so I can respond promptly.",
+            "business_value": "High",
+            "brd_reference": "3.4 Doctor Dashboard"
+        },
+        {
+            "story_id": "D004",
+            "epic": "Doctor Dashboard & Patient Management",
+            "title": "As a doctor, I can send an encrypted text message reply to a patient, so I can communicate effectively.",
+            "business_value": "High",
+            "brd_reference": "3.4 Doctor Dashboard"
+        },
+        {
+            "story_id": "D005",
+            "epic": "Doctor Prescription Management",
+            "title": "As a doctor, I can upload a new PDF prescription for a specific patient, so their records are complete.",
+            "business_value": "High",
+            "brd_reference": "3.5 Doctor Prescription Upload"
+        },
+        {
+            "story_id": "D006",
+            "epic": "Doctor Prescription Management",
+            "title": "As a doctor, I can add relevant tags (e.g., date, medication type) to an uploaded prescription, so it's easily searchable and organized.",
+            "business_value": "High",
+            "brd_reference": "3.5 Doctor Prescription Upload"
+        },
+        {
+            "story_id": "S001",
+            "epic": "Platform Security & Compliance",
+            "title": "As a system administrator, I need the system to ensure all patient data at rest is encrypted, so we comply with HIPAA guidelines.",
+            "business_value": "High",
+            "brd_reference": "5.1 Data Privacy (HIPAA)"
+        },
+        {
+            "story_id": "S002",
+            "epic": "Platform Security & Compliance",
+            "title": "As a system administrator, I need the system to securely store and retrieve all PDF reports and prescriptions, so data integrity is maintained.",
+            "business_value": "High",
+            "brd_reference": "4.3 Storage (AWS S3) & 2. Core Objective"
+        },
+        {
+            "story_id": "S003",
+            "epic": "Platform Security & Compliance",
+            "title": "As a system administrator, I need the system to manage user authentication securely using JWT tokens, so only authorized users can access the portal.",
+            "business_value": "High",
+            "brd_reference": "4.2 Authentication (NextAuth.js with JWT)"
+        },
+        {
+            "story_id": "A001",
+            "epic": "Platform Accessibility",
+            "title": "As a patient, I need the patient-facing UI to meet WCAG 2.1 Level AA accessibility standards, so I can use the portal regardless of my abilities.",
+            "business_value": "High",
+            "brd_reference": "5.2 Accessibility"
+        }
+    ]
+}
