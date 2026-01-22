@@ -20,8 +20,6 @@ from src.nikhil.niti.manager.infrastructure.trello.trello_publisher import publi
 TRELLO_API_KEY = os.getenv("TRELLO_API_KEY")
 TRELLO_TOKEN = os.getenv("TRELLO_TOKEN")
 
-# Update path to a relative path
-# The file was found at D:/Crew/bala-katha/.Amsha/output/final/output/estimation_architecture/gemini-2.5-flash.json
 # Relative to project root, this is D:/Crew/bala-katha/.Amsha/output/final/output/estimation_architecture/gemini-2.5-flash.json
 json_file_path = os.path.join(project_root, "D:/Crew/bala-katha/.Amsha/output/final/output/estimation_architecture/gemini-2.5-flash.json")
 # If file doesn't exist, this will fail, but with a clear error.
